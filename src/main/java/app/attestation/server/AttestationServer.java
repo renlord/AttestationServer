@@ -894,7 +894,7 @@ public class AttestationServer {
             exchange.getResponseHeaders().set("Content-Type", "image/png");
             exchange.sendResponseHeaders(200, 0);
             try (final OutputStream output = exchange.getResponseBody()) {
-                final String contents = "attestation.app " +
+                final String contents = "staging.attestation.app " +
                     account.userId + " " +
                     BaseEncoding.base64().encode(account.subscribeKey) + " " +
                     account.verifyInterval;

@@ -9,7 +9,7 @@ rm -rf static_tmp
 cp -a static static_tmp
 
 for file in static_tmp/**/*.@(json|webmanifest); do
-    json_reformat -m < "$file" | sponge "$file"
+    json_reformat -m < "$file" 
 done
 
 find static_tmp -name '*.html' -exec html-minifier --collapse-whitespace \

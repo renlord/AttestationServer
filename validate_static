@@ -12,4 +12,4 @@ done
 xmllint --noout static/**/*.@(html|svg|xml)
 eslint static/**/*.js
 stylelint static/**/*.css
-validatornu --Werror --also-check-css --also-check-svg static/**/*.@(css|html|svg)
+#validatornu --Werror --also-check-css --also-check-svg static/**/*.@(css|html|svg)
